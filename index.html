@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f4f8;
+            color: #000000;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://i.pinimg.com/originals/12/b2/3a/12b23a7752e8a7a4464c1ff5e596237f.gif');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 40px;
+            background: rgba(0.8);
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            padding: 20px 150px;
+            background-color: #25383C;
+            color: white;
+            border-radius: 10px 10px 0 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .header img {
+            width: 120px;
+            height: 120px;
+            border-radius: 10%;
+            border: 1px solid #000000;
+            margin-right: 20px;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+
+        .header p {
+            margin: 5px 0;
+            font-size: 1.1em;
+            font-weight: 400;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section-title {
+            font-size: 1.6em;
+            margin-bottom: 10px;
+            padding-bottom: 5px;
+            color: white;
+            font-weight: 1000;
+            border-bottom: 3px solid white;
+        }
+
+        .item {
+            margin-bottom: 20px;
+            padding: 20px;
+            border: 1px solid #000000;
+            border-radius: 8px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .item h2 {
+            margin: 0;
+            font-size: 1.3em;
+            color: #000000;
+            font-weight: 500;
+        }
+
+        .item p {
+            margin: 5px 0;
+            font-size: 1.1em;
+            font-weight: 400;
+            color: #000000;
+        }
+
+        .item ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+
+        .item ul li {
+            font-size: 1.1em;
+            color: #000000;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            position: relative;
+        }
+
+        .skills button {
+            background-color: #000000;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 1.1em;
+            font-weight: 500;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .skills button:hover {
+            background-color: Purple;
+            transform: scale(1.1);
+        }
+
+        .skill-description {
+            display: none;
+            background-color: #ffffff;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+            font-size: 1em;
+            position: absolute;
+            top: 50px;
+            left: 0;
+            right: 0;
+            width: 250px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transform: scale(0.9);
+            transition: transform 0.3s ease;
+        }
+
+        .skill-description.show {
+            display: block;
+            transform: scale(1);
+        }
+
+      
+        .social-media {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: flex;
+            gap: 15px;
+            z-index: 1000;
+        }
+
+        .social-media a {
+            background-color: #25383C;
+            color: white;
+            padding: 10px;
+            border-radius: 50%;
+            font-size: 1.5em;
+            text-align: center;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .social-media a:hover {
+            background-color: #6A4C9C;
+            transform: scale(1.1);
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2.2em;
+            }
+
+            .header img {
+                width: 90px;
+                height: 90px;
+            }
+
+            .section-title {
+                font-size: 1.4em;
+            }
+
+            .item h2 {
+                font-size: 1.1em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <img src="https://assets.onecompiler.app/42vrgkq3y/42vrdabzz/dcd7a59c-f981-4354-b5cc-78c3a85025bf.jpg" alt="Vince Deniel R. Titular"> 
+        <div>
+            <h1>Vince Deniel R. Titular</h1>
+            <p>Email: vincedenielt@gmail.com | Phone: 09065804372</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Education</div>
+        <div class="item">
+            <h2>San Isidro Elementary School</h2>
+            <p>2012-2018</p>
+            <h2>San Isidro Integrated National HighSchool</h2>
+            <p>2018-2023</p>
+            <p>Graduated with Honors</p>
+            <h2>Kolehiyo ng Lungsod ng Lipa</h2>
+            <p>Bachelor of Science in Computer Science-1A</p>
+            <p>2024-2028</p>
+            <p>Graduated with Honors</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Experience</div>
+        <div class="item">
+            <h2>Software Developer Intern</h2>
+            <p>ABC Company, Summer 2021</p>
+            <li>Collaborated with a team of developers to design and implement a responsive web application for a client, utilizing HTML, CSS, and JavaScript to create a seamless user experience.</li>
+            <li>Developed dynamic web features using JavaScript and jQuery, improving the performance of client-side interactions by 30%.</li>
+            <li>Assisted in building and optimizing RESTful APIs using Node.js and Express, which resulted in reducing the server response time by 15%.</li>
+            <li>Integrated MongoDB for data storage and retrieval, ensuring scalability and efficient handling of large datasets.</li>
+            <li>Actively participated in daily Agile stand-up meetings and sprint planning, contributing to team discussions and code reviews.</li>
+            <li>Gained hands-on experience with Git for version control, collaborating with a team of 5 developers to ensure smooth project progress.</li>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Skills</div>
+        <div class="item">
+            <div class="skills">
+                <button onclick="showDescription('html')">HTML</button>
+                <button onclick="showDescription('css')">CSS</button>
+                <button onclick="showDescription('js')">JavaScript</button>
+                <button onclick="showDescription('python')">Python</button>
+                <button onclick="showDescription('java')">Java</button>
+                <button onclick="showDescription('c')">C Language</button>
+                <button onclick="showDescription('cpp')">C++</button>
+            </div>
+
+            <div id="html" class="skill-description">
+                <p>HTML (Hypertext Markup Language) is the standard language for creating web pages and web applications.</p>
+            </div>
+            <div id="css" class="skill-description">
+                <p>CSS (Cascading Style Sheets) controls the presentation, formatting, and layout of web pages.</p>
+            </div>
+            <div id="js" class="skill-description">
+                <p>JavaScript is a programming language that enables interactive web pages by allowing dynamic content updates.</p>
+            </div>
+            <div id="python" class="skill-description">
+                <p>Python is a high-level, interpreted programming language known for its ease of use and versatility.</p>
+            </div>
+            <div id="java" class="skill-description">
+                <p>Java is a widely-used object-oriented programming language that is platform-independent and suitable for large-scale applications.</p>
+            </div>
+            <div id="c" class="skill-description">
+                <p>C Language is a procedural programming language used for system programming and embedded systems.</p>
+            </div>
+            <div id="cpp" class="skill-description">
+                <p>C++ is an object-oriented programming language used for developing software, systems, and game applications.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="social-media">
+    <a href="https://www.facebook.com/vincedeniel.titular" target="_blank" class="facebook">
+        <i class="fab fa-facebook"></i>
+    </a>
+    <a href="https://www.instagram.com/ainzxi_/profilecard/?igsh=enl1OHlzcTMwOXo1" target="_blank" class="instagram">
+        <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://github.com/Vinz028/Vinz.github.io" target="_blank" class="github">
+        <i class="fab fa-github"></i>
+    </a>
+</div>
+
+
+<script>
+    function showDescription(skill) {
+        const descriptions = document.querySelectorAll('.skill-description');
+        descriptions.forEach(function (desc) {
+            desc.classList.remove('show');
+        });
+        const description = document.getElementById(skill);
+        description.classList.add('show');
+    }
+</script>
+
+</body>
+</html>
